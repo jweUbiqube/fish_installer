@@ -17,8 +17,10 @@ To install fish shell, you need to run the following command:
 ```bash
 git clone https://github.com/jweUbiqube/fish_installer.git
 cd fish_installer
-sh ./install.sh
+bash ./install.sh
 ```
+when shell ask [y]/n, type y
+
 
 After the installation, you can run fish shell with this command:  
 ```bash
