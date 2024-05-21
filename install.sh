@@ -16,6 +16,7 @@ printf "\033[32m Ok\033[0m\n"
 printf "\033[1;36m Installing fzf..."
 git clone --depth 1 https://github.com/junegunn/fzf.git $HOME/.fzf
 $HOME/.fzf/install
+echo "[ -f ~/.fzf.bash ] && source ~/.fzf.bash" >> $HOME/.bashrc
 printf "\033[32m Ok\033[0m\n"
 
 printf "\033[1;36m Copying files to $HOME/.config..."
@@ -30,7 +31,7 @@ printf "\033[32m Ok\033[0m\n"
 
 printf "\033[1;36m Installing starship for bash..."
 echo "if status --is-interactive" >> $HOME/.bashrc
-echo -e "\tsource (starship init fish --print-full-init | psub)" >> $HOME/.bashrc
+echo -e "\tsource <("$HOME/local/bin/starship" init bash --print-full-init)" >> $HOME/.bashrc
 echo "end" >> $HOME/.bashrc
 printf "\033[32m Ok\033[0m\n"
 
