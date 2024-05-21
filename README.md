@@ -86,7 +86,8 @@ ctrl+p
 ```
 ctrl+l
 ```
-![image](https://github.com/jweUbiqube/fish_installer/assets/83966555/df31c366-f836-4124-8b82-678fff1dd199)
+![image](https://github.com/jweUbiqube/fish_installer/assets/83966555/c87a7c4a-7987-41f7-b6bb-c5ffc0942b30)
+
 
 ### Git status with fzf
 ```
