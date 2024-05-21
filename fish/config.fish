@@ -38,7 +38,7 @@ end
 
 
 ## Starship prompt
-if status --is-interactive
+if status --is-interactive && type -q starship
    source (starship init fish --print-full-init | psub)
 end
 
@@ -150,5 +150,6 @@ if status --is-interactive && type -q fastfetch
    fastfetch --config neofetch.jsonc
 end
 
-
-fzf_configure_bindings --directory=\cf --variables=\cv --git_status=\cs --git_log=\cl --processes=\cp
+if status --is-interactive && type -q fzf_configure_bindings
+  fzf_configure_bindings --directory=\cf --variables=\cv --git_status=\cs --git_log=\cl --processes=\cp
+end
