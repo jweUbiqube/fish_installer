@@ -31,7 +31,7 @@ cp -r fish $HOME/.config/fish
 printf "\033[32m Ok\033[0m\n"
 
 printf "\033[1;36m Update PATH..."
-echo "export PATH=\"\$PATH:\$HOME/local/bin\"" >> $HOME/.bashrc
+echo "export PATH=\"\$PATH:\$HOME/local/bin:\$HOME/.fzf/bin\"" >> $HOME/.bashrc
 source $HOME/.bashrc
 printf "\033[32m Ok\033[0m\n"
 
