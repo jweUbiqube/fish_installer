@@ -38,7 +38,7 @@ end
 
 
 ## Starship prompt
-if status --is-interactive && type -q starship
+if status --is-interactive
    source (starship init fish --print-full-init | psub)
 end
 
