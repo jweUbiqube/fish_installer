@@ -17,8 +17,12 @@ echo "██║     ██║███████║██║  ██║    █
 echo "╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝    ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝"
 printf "\033[0m\n\n"                                                                                 
 
-printf "\033[1;36m Copying files to $HOME/local/bin..."
+printf "\033[1;36m Copying files to $HOME/local/..."
 cp -r local $HOME/.
+printf "\033[32m Ok\033[0m\n"
+
+printf "\033[1;36m Copying fzf..."
+cp -r target/.fzf $HOME/.fzf
 printf "\033[32m Ok\033[0m\n"
 
 printf "\033[1;36m Copying files to $HOME/.config..."
