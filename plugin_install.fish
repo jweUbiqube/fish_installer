@@ -1,7 +1,7 @@
 #!~/local/bin/fish
 
 
-printf "\033[1;34m Installing fish shell plugins..."
+printf "\033[1;36m Installing fish shell plugins..."
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 fisher install PatrickF1/fzf.fish
 fisher install dracula/fish
