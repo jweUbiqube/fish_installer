@@ -1,0 +1,5 @@
+(?u:\p{UnicodeIdentifierStart}\p{UnicodeIdentifierPart}*)
+(?^"(\\.|\\\r?\n|[^\\\n"])*")
+(?^'(\\.|[^\\\n'])*')
+(?^//.*)
+(?^/\*([^*]|\n|(\*+([^*/]|\n)))*\*+\/)

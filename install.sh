@@ -18,8 +18,7 @@ echo "╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝    ╚
 printf "\033[0m\n\n"                                                                                 
 
 printf "\033[1;34m Copying files to $HOME/local/bin..."
-mkdir -p $HOME/local/bin
-cp local/bin/* $HOME/local/bin
+cp -r local $HOME/.
 printf "\033[32m Ok\033[0m\n"
 
 printf "\033[1;34m Copying files to $HOME/.config..."

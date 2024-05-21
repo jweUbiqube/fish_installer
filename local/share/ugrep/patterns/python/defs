@@ -1,0 +1,1 @@
+\<def\h+(?u:\p{PythonIdentifierStart}\p{PythonIdentifierPart}*)
