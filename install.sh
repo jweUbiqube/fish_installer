@@ -31,15 +31,11 @@ source $HOME/.bashrc
 printf "\033[32m Ok\033[0m\n"
 
 printf "\033[1;36m Installing starship for bash..."
-echo "if status --is-interactive" >> $HOME/.bashrc
-echo -e "\tsource <("$HOME/local/bin/starship" init bash --print-full-init)" >> $HOME/.bashrc
-echo "end" >> $HOME/.bashrc
+echo "source <("$HOME/local/bin/starship" init bash --print-full-init)" >> $HOME/.bashrc
 printf "\033[32m Ok\033[0m\n"
 
 printf "\033[1;36m Installing fastfetch..."
-echo "if status --is-interactive && type -q fastfetch" >> $HOME/.bashrc
-echo -e "\tfastfetch --config neofetch.jsonc" >> $HOME/.bashrc
-echo "end" >> $HOME/.bashrc
+echo "fastfetch --config neofetch.jsonc" >> $HOME/.bashrc
 printf "\033[32m Ok\033[0m\n"
 
 
