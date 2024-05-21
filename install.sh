@@ -29,6 +29,7 @@ printf "\033[32m Ok\033[0m\n"
 
 printf "\033[1;34m Update PATH..."
 echo "export PATH=$HOME/local/bin:$PATH" >> $HOME/.bashrc
+source $HOME/.bashrc
 printf "\033[32m Ok\033[0m\n"
 
 printf "\033[1;34m Installing starship for bash..."
@@ -41,8 +42,13 @@ printf "\033[1;34m Installing fastfetch..."
 echo "if status --is-interactive && type -q fastfetch" >> $HOME/.bashrc
 echo "  fastfetch --config neofetch.jsonc" >> $HOME/.bashrc
 echo "end" >> $HOME/.bashrc
+source $HOME/.bashrc
 printf "\033[32m Ok\033[0m\n"
 
+
+
+printf "\033[1;34m Launching fish shell...\n\033[0m"
+fish
 
 printf "\033[1;34m Installing fish shell plugins..."
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
@@ -51,6 +57,4 @@ fisher install dracula/fish
 fish_config theme choose "Dracula Official"
 printf "\033[32m Ok\033[0m\n"
 
-
-printf "\033[1;34m Launching fish shell...\n\033[0m"
-fish
+printf "\033[1;33m Done! Enjoy your new shell!\n\033[0m" 
