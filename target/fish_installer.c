@@ -8,7 +8,7 @@
 
 void print_version() {
     // get version from file VERSION
-    FILE *fp = fopen("../fish_installer/VERSION", "r");
+    FILE *fp = fopen("$HOME/local/fish_installer/VERSION", "r");
     if (fp == NULL) {
         fprintf(stderr, "Error: VERSION file not found\n");
         exit(1);
